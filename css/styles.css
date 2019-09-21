@@ -1,0 +1,421 @@
+@charset "iso-8859-1";
+
+* { padding:0; margin:0;	}
+
+html,
+body { height: 100%; overflow: hidden; color: #fff; }
+
+body {
+	background-color: #8eb618;
+	background-image: url('../img/maracana-3.jpg');
+	background-size: auto 1126px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	-webkit-transition: background-image 0.8s ease 0.8s;
+	   -moz-transition: background-image 0.8s ease 0.8s;
+	    -ms-transition: background-image 0.8s ease 0.8s;
+	     -o-transition: background-image 0.8s ease 0.8s;
+	        transition: background-image 0.8s ease 0.8s;
+	}
+	
+h2 {	text-align: left; }
+
+a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: 0.15s color ease;
+	   -moz-transition: 0.15s color ease;
+	    -ms-transition: 0.15s color ease;
+	     -o-transition: 0.15s color ease;
+	        transition: 0.15s color ease;
+	}
+
+	
+.fundo-home{
+	background-image: url('../img/maracana-3.jpg');
+	background-size: auto 1126px;
+}
+.fundo-bola{
+	background-image: url('../img/adidas-brazuca.jpg');
+	background-size: auto 1080px;
+}
+.fundo-estadios{
+	background-image: url('../img/estadio.jpg');
+	background-size: auto 1000px;
+}
+.fundo-rodadas{
+	background-image: url('../img/2014-fifa-world-cup-brazil.jpg');
+	background-size: auto 1000px;
+}
+.fundo-feedback{
+	background-image: url('../img/2014.jpg');
+	background-size: auto 1000px;
+}
+.seta-amarela{
+	color: #f9d300;
+	border-left: 25px solid #f9d300;
+}
+.seta-azul{
+	color: #2275b9;
+	border-left: 25px solid #2275b9;
+}
+
+#header {
+	width: 100%;
+	height: auto;
+	overflow: visible;
+	
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1;
+	
+	text-align: center;
+	}
+	#topo {
+		width: 100%;
+		height: 100px;
+		overflow: visible;
+		
+		background: #8eb618;
+		border-bottom: 5px solid #f9d300;
+		box-shadow: 0 7px 20px #111;
+		opacity: 0.8;
+		}
+	.marquee {
+		padding-top: 20px;
+		width: 100%;
+		height: 30px;
+		overflow: hidden;
+		
+		top: 40px;
+		position: absolute;
+		z-index: -1;
+		
+		background: #111;
+		border-bottom: 3px solid #000;
+		font-family: Verdana;
+		
+		opacity: 0.7;
+		}
+	#logo {
+		width: 267px;
+		height: 150px;
+		
+		top: 0;
+		left: 35%;
+		left: -webkit-calc(50% - (268px/2));  /* para Chrome */
+		left:    -moz-calc(50% - (268px/2));  /* para Firefox */
+		left:         calc(50% - (268px/2));  /* para suporte nativo */
+		position: absolute;
+		z-index: 2;
+		
+		border: none;
+		border-bottom: 5px solid #f9d300;
+		
+		box-shadow: 0 7px 10px #222;
+		opacity: 1;
+		}
+		#logo:hover{
+			top: 20px;
+			border-bottom: 5px solid #fff;
+			
+			}
+			#logo, #logo:hover {
+			
+			-webkit-transition: top 0.5s ease 0.1s;
+			   -moz-transition: top 0.5s ease 0.1s;
+				-ms-transition: top 0.5s ease 0.1s;
+				 -o-transition: top 0.5s ease 0.1s;
+					transition: top 0.5s ease 0.1s;
+			}
+
+#center {
+	top: 200px;
+	left: -webkit-calc(50% - (550px/2));
+	left:    -moz-calc(50% - (550px/2));
+	left:         calc(50% - (550px/2));
+	position: absolute;
+	}
+	#principal {
+		width: 570px;
+		height: 350px;
+		overflow: hidden;
+		
+		top: 0px;
+		position: absolute;
+		
+		
+		font-size: 9pt;
+		font-family: Verdana;
+		box-shadow: 0 0 15px #000;
+		background: #2275b9;
+		opacity: 0.9;
+		-webkit-transition: opacity 0.8s ease 5.8s;
+		   -moz-transition: opacity 0.8s ease 5.8s;
+			-ms-transition: opacity 0.8s ease 5.8s;
+			 -o-transition: opacity 0.8s ease 5.8s;
+				transition: opacity 0.8s ease 5.8s;
+		}
+		
+		#bola {
+			height: 330px;
+			padding-top: 10px;
+			border-bottom: 2px solid #fff;
+			}
+			#bola h2 { padding: 5px; text-align: left; color: #2275b9; background: #fff;}
+			
+			#bola p,
+			#bola ul { padding: 4px; text-align: left; font-size: 10pt; }
+		
+		#estadios .controle-setas {
+			width: 100px;
+			height: 38px;
+			
+			top: 4px;
+			left: 45%;
+			left: -webkit-calc(50% - (100px/2));  
+			left:    -moz-calc(50% - (100px/2));     
+			left:         calc(50% - (100px/2)); 
+			position: absolute;
+			z-index: 10;	
+
+			background: #fff;
+			}
+			.esquerda { padding-right: 10px; left: 0; }
+			.direita { padding-left: 10px; right: 0; }	
+			
+			.esquerda,
+			.direita {
+				height: 100%;
+				width: 33px;
+				
+				top: 0;
+				position: absolute;
+				}
+				.esquerda:hover,
+				.direita:hover {
+					border-bottom: 3px solid #fff;
+					background: #f9d300;
+				}
+				.display{
+					display:none;
+					}
+					#voltar{
+						width: 510px;
+						height:auto;
+						font-size:16pt;
+						margin: 0 30px;
+						color:#333;
+						text-shadow:0 0 6px #fff;
+						position:absolute;
+						text-align:center;
+						opacity:1;
+						z-index:2;
+						}
+						#voltar:hover{
+							
+							background:#fff;
+							opacity:1;
+						}
+					.display img{
+						top:0;
+						position:absolute;
+					}
+					.nome-display {
+						width: 510px;
+						height: 30px;
+
+						bottom: 0;
+						position: absolute;
+
+						text-align: center;
+						font-size:16pt;
+						margin: 0 30px;
+						
+						background: #fff;
+						color: #003e6f;
+						opacity:0.9;
+					}
+				.anterior, .proximo{
+					height:100%;
+					width:20px;
+					top:0px;
+					z-index:4;
+					background:#fff;
+					position:absolute;
+					opacity:0.5;
+					}
+					.anterior:hover, .proximo:hover{
+						opacity:1;
+						border-left:none;
+					}
+				
+				.anterior{
+					left:0;
+					padding-right:10px;
+				}
+				.proximo{
+					right:0;
+					padding:0 5px;
+				}
+				.seta-volta,
+				.seta-avanca {
+					top: 45%;
+					top: -webkit-calc(50% - (20px/2));  
+					top:    -moz-calc(50% - (20px/2));     
+					top:         calc(50% - (20px/2));
+					
+					position: absolute;
+					z-index: 10;
+					
+					border: 10px solid transparent;
+				}
+				
+				.seta-volta { border-right: 16px solid #333; }
+				.seta-avanca { border-left: 16px solid #333; }
+					
+			.pagina2 { display: none; }
+				
+				.pagina1 > h2,
+				.pagina2 > h2,
+				.item { background: #8eb618; }
+				
+				.item {
+					width: 170px;
+					height: 120px;
+					box-shadow: 0 0 3px #000;
+					}
+					.item:hover { background: #f9d300; }
+					
+					.nome-item {
+						width: 100%;
+						height: 24px;
+						
+						top: 17px;
+						position: relative;
+						
+						text-align: center;
+						background: #fff;
+						color: #003e6f;
+					}
+					
+					.thumb {
+						width: 80px;
+						height: 80px;
+						margin-left: -40px;
+						
+						top: 10px;
+						left: 50%;
+						display: block;
+						position: relative;
+					}
+					
+					.linha1 { top: 70px; position: absolute; }
+				
+					.linha2 { top: 220px; position: absolute; }
+					
+					.coluna1 { left: 10px; position: absolute; }
+					
+					.coluna2 { left: 200px; position: absolute; }
+					
+					.coluna3 { left: 390px; position: absolute; }
+					
+				.pagina1 > h2,
+				.pagina2 > h2 {
+					width: 100%;
+					padding: 10px 10px;
+					
+					position: absolute;
+					
+					border-bottom: 3px solid #fff;
+				}
+		#rodadas table {
+			width:100%;
+			height:350px;
+			padding:10px;
+			}
+			table, th { border: 1px solid #fff; }
+			
+			th { background: #fff; color: #000; }
+			td { width: 20px; text-align: center; }
+		
+		#formulario {
+		width: 280px;
+		height: 100%;
+		margin: 10px 0 0 10px;
+		
+		display: block;
+		position: absolute;
+		}
+		#campos {
+			width: 280px;
+			height: auto;
+			
+			left: -webkit-calc(50% - (280px/2));  
+			left:    -moz-calc(50% - (280px/2));     
+			left:         calc(50% - (280px/2));
+			display: block;
+			position: absolute;
+			}
+			
+			.descricao-campo { font-size: 10pt; }
+			
+			#nome,
+			#nome2,
+			#email,
+			#email2,
+			#opiniao,
+			#opiniao2 { width: 200px; }
+			
+			input[type = submit] { left: 0; position: absolute; }
+			
+			input[type = reset] { right: 0; position: absolute; }
+			
+			#botoes {
+				width: 100px;
+				height: 20px;
+				
+				left: 45%;
+				left: -webkit-calc(50% - (100px/2));  
+				left:    -moz-calc(50% - (100px/2));     
+				left:         calc(50% - (100px/2));			
+				position: absolute;
+				}
+			#dados-recebidos {
+				width: 250px;
+				height: 100%;
+				padding: 10px 0 0 10px;
+				
+				right: 0;
+				position: absolute;
+				
+				background: #fff;
+				color: #000;
+				border-left: 2px solid #fff;
+				
+				}
+
+		#bola,		
+		#rodadas,
+		#feedback,
+		#estadios,
+		#principal { display: none; }
+		
+#footer { overflow: hidden; font-family: Verdana; font-size: 10pt; text-align: center; }	
+
+	#rodape {
+		width: 100%;
+		height: 30px;
+		overflow: hidden;
+		
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		z-index: 1;
+		
+		background: #8eb618;
+		border-top: 5px solid #f9d300;
+		box-shadow: 0 -7px 20px #111;
+		}

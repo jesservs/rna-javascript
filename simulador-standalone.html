@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    </head>
+    <body>
+    
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    
+    var teclas = {};
+    $text = "nada";
+
+    $("body").keydown(function(e){
+        teclas[e.which] = true;
+        $text = avaliarTeclas();
+        render();
+
+    });
+
+    $("body").keyup(function(e){
+        teclas[e.which] = false;
+        $text = avaliarTeclas();
+        render();
+    });
+    
+    function render(){
+        desenhar();
+    }
+    
+    function desenhar(){
+        $("body").html("<img src='img/" + $text + ".png'>");
+    }
+    
+    function avaliarTeclas(){
+        if (teclas[37] && teclas[38]){
+            $text='esquerda_cima';
+        } else if (teclas[39] && teclas[38]){
+            $text='direita_cima';
+        } else if (teclas[37] && teclas[40]){
+            $text='esquerda_baixo';
+        } else if (teclas[39] && teclas[40]){
+            $text='direita_baixo';
+        } else if (teclas[38] && teclas[40]){
+            $text='cima_baixo';
+        } else if (teclas[37] && teclas[39]){
+            $text='esquerda_direita';
+        } else if (teclas[37]){
+            $text='esquerda';
+        } else if (teclas[38]){
+            $text='cima';
+        } else if (teclas[39]){
+            $text='direita';
+        } else if (teclas[40]){
+            $text='baixo';
+        } else {
+            $text='nada';
+        }
+        return $text;
+    }
+});
+    
+</script>
+</body>
+</html>
